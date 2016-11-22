@@ -48,6 +48,7 @@ header{
 }
 footer{
   background-color: #4F0112 !important;
+  margin: 0% !important;
 }
 #about-me{
   color: #FCEEDA !important;
@@ -89,6 +90,11 @@ li>a, .text-raleway{
 .card-about {
   background: #93001B !important;
   color: #FCEEDA !important;
+  margin: 6% !important;
+  box-sizing: border-box;
+}
+.card-projects {
+
 }
 .tabs{
   background: #93001B !important;
@@ -107,4 +113,14 @@ li>a, .text-raleway{
 }
 .text-cream {
   color: #FCEEDA !important
+}
+.img-logos{
+  width: 40px;
+  height:40px;
+}
+.box-logos{
+  margin: 5% 0%;
+}
+.button-projects {
+  margin: 7% 4%;
 }
