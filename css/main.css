@@ -50,6 +50,9 @@ footer{
   background-color: #4F0112 !important;
   margin: 0% !important;
 }
+#sidenav-overlay{
+  margin-left: 300px!important;
+}
 #about-me{
   color: #FCEEDA !important;
 }
@@ -123,4 +126,9 @@ li>a, .text-raleway{
 }
 .button-projects {
   margin: 7% 4%;
+}
+.icon-footer{
+  height: 80px;
+  width: 80px;
+
 }
