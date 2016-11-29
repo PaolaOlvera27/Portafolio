@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.button-collapse').sideNav();
+    $('.button-collapse').sideNav('hide');
     $('.parallax').parallax();
     $('ul.tabs').tabs('select_tab', 'tab_id');
     $('.carousel').carousel();

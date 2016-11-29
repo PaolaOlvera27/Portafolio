@@ -130,5 +130,44 @@ li>a, .text-raleway{
 .icon-footer{
   height: 80px;
   width: 80px;
-
+}
+/*Media querries*/
+@media screen and (min-width: 800px)  {
+  #paralax-responsive-sm{
+    display:inline-block;
+    visibility: collapse;
+  }
+  #paralax-responsive-m{
+    display:inline-block;
+    visibility: collapse;
+  }
+  #paralax-responsive-lg{
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  #paralax-responsive-sm{
+    display:inline-block;
+    visibility: collapse;
+  }
+  #paralax-responsive-m{
+    visibility: visible;
+  }
+  #paralax-responsive-lg{
+    display:inline-block;
+    visibility: collapse;
+  }
+}
+@media screen and (max-width: 500px) {
+  #paralax-responsive-sm{
+    visibility: visible;
+  }
+  #paralax-responsive-m{
+    display:inline-block;
+    visibility: collapse;
+  }
+  #paralax-responsive-lg{
+    display:inline-block;
+    visibility: collapse;
+  }
 }
