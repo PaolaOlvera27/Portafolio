@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.parallax').parallax();
     $('ul.tabs').tabs('select_tab', 'tab_id');
     $('.carousel').carousel();
+     $('.materialboxed').materialbox();
 //
 var value = 0;
 var pos = 0;
