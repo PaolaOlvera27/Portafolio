@@ -66,6 +66,9 @@ footer{
 .text-dancing{
   font-family: 'Dancing Script', cursive;
 }
+li>a{
+  color: #CD965A !important;
+}
 li>a, .text-raleway{
   font-family: 'Raleway', sans-serif;
 }
@@ -131,6 +134,82 @@ li>a, .text-raleway{
   height: 80px;
   width: 80px;
 }
+/* Progress bars */
+#p-html{
+    background-image: url('../img/logos/logo-html.jpg');
+    background-size: cover;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:80px;
+    opacity: 0.8;
+}
+#p-css{
+   background-image: url('../img/logos/logo-css.png');
+   background-size: cover;
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   padding:80px;
+   opacity: 0.88
+}
+#p-js{
+   background-image: url('../img/logos/logo-js.png');
+   background-size: cover;
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   padding:80px;
+   opacity: 0.8;
+}
+#p-jquery{
+   background-image: url('../img/logos/logo-jquery.png');
+   background-size: cover;
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   padding:80px;
+   opacity: 0.8;
+}
+progress {
+ appearance: none;
+ position: relative;
+ overflow: hidden;
+ width: 3em;
+ height: 3.5em;
+ padding: 0;
+ border: none;
+ transition: height .4s;
+}
+progress.hidden {
+  height: 0;
+  transition-delay: .4s;
+}
+progress::before {
+  content: attr(value);
+  position: absolute;
+  top:0; left: 0; right: 0; bottom: 0;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: .62em;
+  color: hsla(0,0%,100%,.6);
+  background: linear-gradient(
+      hsla(0,0%,100%,1),
+      hsla(0,0%,100%,.0) 80% )
+      no-repeat center;
+  background-position: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+progress::-webkit-progress-bar,
+progress::-webkit-progress-value {
+ background: transparent;
+}
+
 /*Media querries*/
 @media screen and (min-width: 800px)  {
   #paralax-responsive-sm{
