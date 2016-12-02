@@ -8,44 +8,27 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Raleway:500" rel="stylesheet">
+    <script src="js/modernizr.js"></script>
   </head>
   <body>
     <header class="z-depth-5">
-      <div class="navbar-fixed">
-        <nav class=" N/A transparent">
-          <div class="nav-wrapper">
-            <div class="container">
-              <a href="#!" class="brand-logo"><img src="img/apao-logo.png" alt="logo" class="logo responsive-img" /></a>
-              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="#Home"><i class="material-icons left">home</i>Inicio</a></li>
-                <li><a href="#About_me"><i class="material-icons left">favorite</i>Aceca de mi</a></li>
-                <li><a href="#Skills"><i class="material-icons left">code</i>Habilidades</a></li>
-                <li><a href="#Projects"><i class="material-icons left">folder_shared</i>Portafolio</a></li>
-                <li><a href="#Contact"><i class="material-icons left">phone</i>Contacto</a></li>
-              </ul>
-              <ul class="side-nav" id="mobile-demo">
-                <li><div class="userView">
-                  <div class="background"></div>
-                  <a href="#"><img class="circle" src="img/img-nav.jpg"></a>
-                  <a href="#"><span class="white-text name">Paola Olvera</span></a>
-                  <a href="#"><span class="white-text email">apao.iq1@gmail.com</span></a>
-                </div></li>
-                <li><a href="#Home" class="waves-effect"><i class="material-icons left">home</i>Inicio</a></li>
-                <li><a href="#About_me" class="waves-effect"><i class="material-icons left">favorite</i>Acerca de mi</a></li>
-                <li><a href="#Skills" class="waves-effect"><i class="material-icons left">code</i>Habilidades</a></li>
-                <li><a href="#Projects" class="waves-effect"><i class="material-icons left">folder_shared</i>Portafolio</a></li>
-                <li><a href="#Contact" class="waves-effect"><i class="material-icons left">phone</i>Contacto</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <div class="fixed-action-btn toolbar">
+         <a class="btn-floating btn-large z-depth-5 waves-effect waves-light" id="toolbar-menu">
+           <i class="large material-icons">menu</i>
+         </a>
+         <ul>
+           <li><a href="#About_me" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Acerca de mí"><i class="material-icons">favorite</i></a></li>
+           <li><a href="#Skills" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Habilidades"><i class="material-icons">code</i></a></li>
+           <li><a href="#Projects" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Portafolio"><i class="material-icons">folder_shared</i></a></li>
+           <li><a href="#Contact" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Contacto"><i class="material-icons">phone</i></a></li>
+         </ul>
+       </div>
       <div id="Home" class="row">
         <div class="col s12">
           <div class="center log">
-            <img src="img/logo1AnaPao.png" alt="logo" class="responsive-img valign" />
+            <img src="img/logo2AnaPao.png" alt="logo" class="responsive-img valign" />
           </div>
         </div>
       </div>
@@ -68,7 +51,7 @@
           </div>
           <div class="parallax" id="paralax-responsive-sm">
             <img src="img/bg-paralax-xs.jpg" class="responsive-img img-home">
-            <h3 id="text-paralax" class="valign"></h3>
+            <h3 class="text-paralax" class="valign"></h3>
           </div>
         </div>
       </section>
@@ -80,10 +63,10 @@
             </div>
           </div>
           <div class="row">
-            <div class="col s12 m4">
-              <img src="img/img-about.jpg" alt="img" class="responsive-img circle z-depth-5"/>
+            <div class="col s4">
+              <img src="img/skills.png" alt="img" class="responsive-img"/>
             </div>
-            <div class="col s12 m8">
+            <div class="col s8">
               <div class="card-panel z-depth-5 card-about center-align valign ">
                 <span class="card-about flow-text">Mi objetivo es  integrarme y colaborar en una empresa del sector tecnológico. Considero que una capacitación continua potencializa mis habilidades, por ello siempre busco adquirir nuevo conocimiento, de manera que pueda contribuir con conocimiento, nuevas ideas e innovación en una empresa. </span>
               </div>
@@ -94,34 +77,53 @@
       <section> <!--paralax-->
         <div id="paralax-about" class="parallax-container">
           <div class="parallax"><img src="img/bg-paralax2.jpg" class="responsive-img img-home">
-            <h3 id="text-paralax" class="valign">"La verdadera sabiduría está en saber que nunca terminas de aprender"</h3>
+            <h3 class="text-paralax" class="valign">"La verdadera sabiduría está en saber que nunca terminas de aprender"</h3>
           </div>
         </div>
       </section>
       <section id="Skills"> <!--skills-->
         <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <h2 class="center-align text-dancing"><b>Habilidades</b></h2>
-            </div>
             <div class="row">
-              <div class="col s3">
-                <img src="img/img-skills.jpg" alt="img" class="responsive-img">
-              </div>
-              <div class="col s9">
-                <div class="row">
-                  <div id="p-html" class="col s3">
-                    <progress max="80"></progress>
-                  </div>
-                  <div id="p-css" class="col s3">
-                    <progress max="80"></progress>
-                  </div>
-                  <div id="p-js" class="col s3">
-                    <progress max="40"></progress>
-                  </div>
-                  <div id="p-jquery" class="col s3">
-                    <progress max="30"></progress>
-                  </div>
+              <div class="col s12">
+                  <h2 class="center-align text-dancing"><b>Habilidades</b></h2>
+                <div class="slider">
+                  <ul class="slides">
+                    <li>
+                      <img src="img/logos/inicio.png">
+                      <div class="caption center-align">
+                        <!-- <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/logos/html.jpg">
+                      <div class="caption center-align">
+                        <!-- <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/logos/css.png">
+                      <div class="caption left-align">
+                        <!-- <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/logos/js.png">
+                      <div class="caption right-align">
+                        <!-- <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                      </div>
+                    </li>
+                    <!-- <li>
+                      <img src="img/logos/jquery.png">
+                      <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                      </div>
+                    </li> -->
+                  </ul>
                 </div>
                 <!-- <div class="center box-logos">
                   <img src="img/logos/logo-html.jpg" alt="img" class=" img-logos">
@@ -140,7 +142,7 @@
       <section> <!--paralax-->
         <div id="paralax-about" class="parallax-container">
           <div class="parallax"><img src="img/bg-paralax3.jpg" class="responsive-img img-home">
-            <h3 id="text-paralax" class="valign">"Una idea se puede llevar a cabo, sólo sí, tomas la decisión de ejecutarla"</h3>
+            <h3 class="text-paralax" class="valign">"Una idea se puede llevar a cabo, sólo sí, tomas la decisión de ejecutarla"</h3>
           </div>
         </div>
       </section>
@@ -239,14 +241,14 @@
                <a href="https://github.com/PaolaOlvera27"><img src="img/icons/github.png" class="icon-footer" alt="icon"></a>
                <!-- <a href=""><img src="img/icons/mail.png" class="icon-footer" alt="icon"></a> -->
              </div>
-             <div class="col l4 offset-l2 s12">
+             <!-- <div class="col l4 offset-l2 s12">
                <h5 class="white-text">Encuentrame en:</h5>
                <ul>
                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/paola-olvera">Linked in</a></li>
                  <li><a class="grey-text text-lighten-3" href="https://github.com/PaolaOlvera27">GitHub</a></li>
-                 <!-- <li><a class="grey-text text-lighten-3" href="#!">Gmail</a></li> -->
+                  <li><a class="grey-text text-lighten-3" href="#!">Gmail</a></li> 
                </ul>
-             </div>
+             </div> -->
            </div>
          </div>
          <div class="footer-copyright">
@@ -259,5 +261,6 @@
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script type="text/javascript" src="js/materialize.min.js"></script>
      <script type="text/javascript" src="js/main.js"></script>
+     <script type="text/javascript" src="js/nav.js"></script>
    </body>
 </html>
