@@ -19,10 +19,10 @@
            <i class="large material-icons">menu</i>
          </a>
          <ul>
-           <li><a href="#About_me" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Acerca de mí"><i class="material-icons">favorite</i></a></li>
-           <li><a href="#Skills" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Habilidades"><i class="material-icons">code</i></a></li>
-           <li><a href="#Projects" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Portafolio"><i class="material-icons">folder_shared</i></a></li>
-           <li><a href="#Contact" class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Contacto"><i class="material-icons">phone</i></a></li>
+           <li><a href="#About_me" class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Acerca de mí"><i class="material-icons">favorite</i></a></li>
+           <li><a href="#Skills" class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Habilidades"><i class="material-icons">code</i></a></li>
+           <li><a href="#Projects" class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Portafolio"><i class="material-icons">folder_shared</i></a></li>
+           <li><a href="#Contact" class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Contacto"><i class="material-icons">phone</i></a></li>
          </ul>
        </div>
       <div id="Home" class="row">
@@ -42,7 +42,7 @@
       <section> <!--home parallax-->
         <div id="paralax-about" class="parallax-container">
           <div class="parallax" id="paralax-responsive-lg">
-            <img src="img/bg-paralax.jpg" class="responsive-img img-home">
+            <img src="img/bg-paralaxa.jpg" class="responsive-img img-home">
             <h3 id="text-paralax" class="valign"></h3>
           </div>
           <div class="parallax" id="paralax-responsive-m">
@@ -81,7 +81,7 @@
           </div>
         </div>
       </section>
-      <section id="Skills"> <!--skills-->
+      <section id="Skills" style="background-color:#BFA59A; padding-bottom:20px; margin-bottom:0px;"> <!--skills-->
         <div class="container">
             <div class="row">
               <div class="col s12">
@@ -90,50 +90,48 @@
                   <ul class="slides">
                     <li>
                       <img src="img/logos/inicio.png">
-                      <div class="caption center-align">
-                        <!-- <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                      <div class="caption left-align">
+                        <h5 class="light grey-text text-lighten-3" style="top:-3%;"></h5>
                       </div>
                     </li>
                     <li>
                       <img src="img/logos/html.jpg">
-                      <div class="caption center-align">
-                        <!-- <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                      <div class="caption left-align">
+                        <h5 class="light grey-text text-lighten-3" style="top:-3%;"></h5>
                       </div>
                     </li>
                     <li>
                       <img src="img/logos/css.png">
                       <div class="caption left-align">
-                        <!-- <h3>Left Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                        <h5 class="light grey-text text-lighten-3" style="top:-3%;"></h5>
                       </div>
                     </li>
                     <li>
                       <img src="img/logos/js.png">
-                      <div class="caption right-align">
-                        <!-- <h3>Right Aligned Caption</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
+                      <div class="caption left-align">
+                        <h5 class="light grey-text text-lighten-3" style="top:-5%;"></h5>
                       </div>
                     </li>
-                    <!-- <li>
+                    <li>
                       <img src="img/logos/jquery.png">
-                      <div class="caption center-align">
-                        <h3>This is our big Tagline!</h3>
-                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                      <div class="caption left-align">
+                        <h5 class="light grey-text text-lighten-3" style="top:-5%;"></h5>
                       </div>
-                    </li> -->
+                    </li>
+                    <li>
+                      <img src="img/logos/bst.jpg">
+                      <div class="caption left-align">
+                        <h5 class="light grey-text text-l ighten-3" style="top:-5%;"></h5>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/logos/mat.jpg">
+                      <div class="caption left-align">
+                        <h5 class="light grey-text text-l ighten-3" style="top:-5%;"></h5>
+                      </div>
+                    </li>
                   </ul>
                 </div>
-                <!-- <div class="center box-logos">
-                  <img src="img/logos/logo-html.jpg" alt="img" class=" img-logos">
-                  <img src="img/logos/logo-css.png" alt="img" class=" img-logos">
-                  <img src="img/logos/logo-javascript.png" alt="img" class=" img-logos">
-                  <img src="img/logos/logo-jquery.png" alt="img" class=" img-logos">
-                  <img src="img/logos/logo-github.png" alt="img" class="img-logos">
-                  <img src="img/logos/logo-bootstrap.png" alt="img" class=" img-logos">
-                  <img src="img/logos/logo-materialize.png" alt="img" class=" img-logos">
-                </div> -->
                 </div>
               </div>
             </div>
@@ -147,108 +145,83 @@
         </div>
       </section>
       <section id="Projects" class="bg-beige z-depth-5"><!--proyects-->
-        <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <h2 class="center-align text-dancing"><b class="text-rouge">Portafolio</b></h2>
+        <div class="row">
+          <div class="col s12">
+            <h2 class="center-align text-dancing"><b class="text-rouge">Portafolio</b></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/projects/cine.png">
+              </div>
+              <div class="card-content center-align">
+                <p>Cinemax, un nuevo reto, ya dominando la Grid el reto fue conocer nuevas etiquetas,
+                  ya que en este ejercicio teniamos que poner un buscador y un video dentro de la pagina,
+                  investigando en internet logramos resolver el reto. Si deseas ver mi trabajo,
+                  te invito a que des click en ver en GitHub ahí podras ver mis lineas de codigo y la forma en la que codeeo.</p>
+              </div>
+              <div class="card-action center-align">
+                <a href="https://github.com/PaolaOlvera27/11_Grif-System" target="_blank">Ver en github</a>
+                <a href="file:///C:/Users/Paola/Desktop/Laboratoria/14_cinema/index.html" target="_blank">Link</a>
+              </div>
             </div>
           </div>
-          <div class="row">
-           <div class="col s12">
-             <ul class="tabs">
-               <li class="tab col s4"><a class="active tab1" href="#test1">Juliard</a></li>
-               <li class="tab col s4"><a class="tab1" href="#test2">Mi primer Grid</a></li>
-               <li class="tab col s4"><a class="tab1" href="#test3">Cinema</a></li>
-             </ul>
-           <div id="test1" class="col s12 projects z-depth-5">
-             <div class="row">
-               <div class="col s12">
-                 <div class="carousel">
-                  <a class="carousel-item" href="#one!"><img src="img/projects/Juilliard-1.jpg" class="responsive-img"></a>
-                  <a class="carousel-item" href="#two!"><img src="img/projects/Juilliard-2.jpg" class="responsive-img"></a>
-                  <a class="carousel-item" href="#three!"><img src="img/projects/Juilliard-3.jpg" class="responsive-img"></a>
-                  <a class="carousel-item" href="#four!"><img src="img/projects/Juilliard-4.jpg" class="responsive-img"></a>
-                </div>
-               </div>
-               <div class="row">
-                <div class="col s12 m6">
-                  <div class="card-panel card-about z-depth-5">
-                    <span class="white-cream text-raleway">Julliard,escuela de danza, un proyecto de un sitio con varias paginas. Si deseas ver mi trabajo, te invito a que des click en ver en GitHub ahí podras ver mis lineas de codigo y la forma en la que codeeo.</span>
-                  </div>
-                </div>
-                <div class="col s12 m6">
-                  <a href="https://github.com/PaolaOlvera27/19_EscueladeDanza" class="btn-floating btn-large waves-effect waves-light red button-projects"><i class="material-icons">add</i></a>
-                </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/projects/Ju.jpg">
               </div>
-             </div>
-           </div>
-           <div id="test2" class="col s12 projects z-depth-5">
-             <div class="row">
-               <div class="col s12">
-                 <div class="carousel">
-                  <a class="carousel-item" href="#one!"><img src="img/projects/primergrid.png" class="responsive-img"></a>
-                  <a class="carousel-item" href="#two!"><img src="img/projects/file-page1.jpg" class="responsive-img"></a>
-                  <a class="carousel-item" href="#three!"><img src="img/projects/file-page2.jpg" class="responsive-img"></a>
-                  <!-- <a class="carousel-item" href="#four!"><img src="img/projects/Juilliard-4.jpg" class="responsive-img"></a>  -->
-                </div>
-               </div>
-               <div class="row">
-                <div class="col s12 m6">
-                  <div class="card-panel card-about z-depth-5">
-                    <span class="white-cream text-raleway">Mi primer ejercicio donde puse en practica los conocimientos de la Grid System, fue unreto para mi, ya que me se me complico comprender la forma en que se trabaja con columnas y renglones, finalmente tuve un buen resultado. Si deseas ver mi trabajo, te invito a que des click en ver en GitHub ahí podras ver mis lineas de codigo y la forma en la que codeeo.</span>
-                  </div>
-                </div>
-                <div class="col s12 m6">
-                  <a href="https://github.com/PaolaOlvera27/11_Grif-System" class="btn-floating btn-large waves-effect waves-light red button-projects"><i class="material-icons">add</i></a>
-                </div>
+              <div class="card-content center-align">
+                <p>Julliard,escuela de danza, un proyecto de un sitio con varias paginas. Si deseas ver mi trabajo,
+                  te invito a que des click en ver en GitHub ahí podras ver mis lineas de codigo y la forma en la que codeeo.</p>
               </div>
-             </div>
-           </div>
-           <div id="test3" class="col s12 projects z-depth-5">
-             <div class="row">
-               <div class="col s12">
-                 <div class="carousel">
-                  <a class="carousel-item" href="#one!"><img src="img/projects/cine.png" class="responsive-img"></a>
-                  <a class="carousel-item" href="#two!"><img src="img/projects/img6.jpg" class="responsive-img"></a>
-                  <a class="carousel-item" href="#three!"><img src="img/projects/cine.png" class="responsive-img"></a>
-                  <!-- <a class="carousel-item" href="#four!"><img src="img/projects/Juilliard-4.jpg" class="responsive-img"></a> -->
-                </div>
-               </div>
-               <div class="row">
-                <div class="col s12 m6">
-                  <div class="card-panel card-about z-depth-5">
-                    <span class="white-cream text-raleway">Cinemax, un nuevo reto, ya dominando la Grid el reto fue conocer nuevas etiquetas, ya que en este ejercicio teniamos que poner un buscador y un video dentro de la pagina, investigando en internet logramos resolver el reto. Si deseas ver mi trabajo, te invito a que des click en ver en GitHub ahí podras ver mis lineas de codigo y la forma en la que codeeo.
-                    </span>
-                  </div>
-                </div>
-                <div class="col s12 m6">
-                  <a href="https://github.com/PaolaOlvera27/14_cinema" class="btn-floating btn-large waves-effect waves-light red button-projects"><i class="material-icons">add</i></a>
-                </div>
+              <div class="card-action center-align">
+                <a href="https://github.com/PaolaOlvera27/19_EscueladeDanza" target="_blank">Ver en github</a>
+                <a href="file:///C:/Users/Paola/Desktop/Laboratoria/19_EscueladeDanza/index.html" target="_blank">Link</a>
               </div>
-             </div>
-           </div>
-         </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/projects/cs.jpg">
+              </div>
+              <div class="card-content center-align">
+                <p>Comunidad sostenible,si deseas ver mi trabajo,
+                  te invito a que des click en ver en GitHub ahí podras ver mis lineas de codigo y la forma en la que codeeo. </p>
+              </div>
+              <div class="card-action center-align">
+                <a href="https://github.com/PaolaOlvera27/18_comunidadSostenible" target="_blank">Ver en github</a>
+                <a href="file:///C:/Users/Paola/Desktop/Laboratoria/18_comunidadSostenible/index.html" target="_blank">Link</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </article>
     <footer id="Contact" class="page-footer">
          <div class="container">
            <div class="row">
-             <div class="col l6 s12">
-               <h5 class="white-text">Contactame:</h5>
+             <div class="col s12">
+               <h3 class="white-text center-align text-dancing">Contáctame:</h3>
                <p class="grey-text text-lighten-4"></p>
-               <a href="https://www.linkedin.com/in/paola-olvera"><img src="img/icons/linkedin.png" class="icon-footer" alt="icon"></a>
-               <a href="https://github.com/PaolaOlvera27"><img src="img/icons/github.png" class="icon-footer" alt="icon"></a>
-               <!-- <a href=""><img src="img/icons/mail.png" class="icon-footer" alt="icon"></a> -->
+               <div class="row">
+                 <div class="col s12 m3 center-align">
+                   <a href="https://github.com/PaolaOlvera27" target="_blank"><img src="img/icons/gh.png" class="icon-footer" alt="icon"></a>
+                 </div>
+                 <div class="col s12 m3 center-align">
+                   <a href="https://www.linkedin.com/in/paola-olvera" target="_blank"><img src="img/icons/lk.png" class="icon-footer" alt="icon"></a>
+                 </div>
+                 <div class="col s12 m3 center-align">
+                   <a href="https://www.facebook.com/profile.php?id=100004376478552&fref=ts" target="_blank"><img src="img/icons/fb.png" class="icon-footer" alt="icon"></a>
+                 </div>
+                 <div class="col s12 m3 center-align">
+                   <a href="https://www.instagram.com/apa_wolys/" target="_blank"><img src="img/icons/ig.png" class="icon-footer" alt="icon"></a>
+                 </div>
+               </div>
              </div>
-             <!-- <div class="col l4 offset-l2 s12">
-               <h5 class="white-text">Encuentrame en:</h5>
-               <ul>
-                 <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/paola-olvera">Linked in</a></li>
-                 <li><a class="grey-text text-lighten-3" href="https://github.com/PaolaOlvera27">GitHub</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Gmail</a></li> 
-               </ul>
-             </div> -->
            </div>
          </div>
          <div class="footer-copyright">
